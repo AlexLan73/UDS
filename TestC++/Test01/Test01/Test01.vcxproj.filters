@@ -33,12 +33,18 @@
     <ClCompile Include="Sourse\CAN\CanTask.cpp">
       <Filter>Исходные файлы\Sourse\CAN</Filter>
     </ClCompile>
+    <ClCompile Include="Sourse\MyQueue.cpp">
+      <Filter>Исходные файлы\Sourse</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sourse\CAN\CanBasa.h">
       <Filter>Файлы заголовков\CAN</Filter>
     </ClInclude>
     <ClInclude Include="Sourse\CAN\CanTask.h">
+      <Filter>Файлы заголовков\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="Sourse\MyQueue.h">
       <Filter>Файлы заголовков\CAN</Filter>
     </ClInclude>
   </ItemGroup>

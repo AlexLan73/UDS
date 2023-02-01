@@ -1,0 +1,10 @@
+#ifndef GCAN_RX_HANDLERS_PRIVATE_H
+#define GCAN_RX_HANDLERS_PRIVATE_H
+
+#define FRAME_VCU_EMS_05_ID		(0x0BC)
+#define FRAME_VCU_EMS_04_ID		(0x0BB)
+#define FRAME_VCU_EMS_03_ID		(0x0BA)
+#define FRAME_VCU_EMS_02_ID		(0x0B9)
+#define FRAME_VCU_EMS_01_ID		(0x0B8)
+
+#endif

@@ -1,0 +1,767 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: YRS ESP EMS
+
+
+BO_ 306 ESP_YRS_03: 8 ESP
+ SG_ AX_STAT : 52|4@1+ (1,0) [0|15] ""  EMS
+ SG_ Reserve2 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ AX : 32|16@1+ (0.0001274,-4.1745) [-4.1745|4.1745] "g"  EMS
+ SG_ Reserve3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ESP_YRS_03_RC : 48|4@1+ (1,0) [0|15] ""  EMS
+ SG_ HardCoded : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ ESP_YRS_03_CS : 56|8@1+ (1,0) [0|255] ""  EMS
+ SG_ NotSupported : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 128 ESP_01: 8 ESP
+ SG_ BMsr : 48|1@1+ (1,0) [0|1] ""  EMS
+ SG_ BAsc : 49|1@1+ (1,0) [0|1] ""  EMS
+ SG_ ESP_01_CS : 56|8@1+ (1,0) [0|255] ""  EMS
+ SG_ MMotInc : 0|16@1+ (1,-30000) [-30000|30000] "Nm"  EMS
+ SG_ MMotRedFast : 16|16@1+ (1,-30000) [-30000|30000] "Nm"  EMS
+ SG_ MMotRed : 32|16@1+ (1,-30000) [-30000|30000] "Nm"  EMS
+ SG_ ESP_01_RC : 52|4@1+ (1,0) [0|15] ""  EMS
+
+BO_ 134 ECU_15: 8 EMS
+ SG_ M_DriverRequest : 16|16@1+ (1,-30000) [-30000|30000] "Nm"  ESP
+ SG_ MotPedPos_Driver : 0|8@1+ (0.5,0) [0|100] "%"  ESP
+ SG_ nICEngineSpeed2 : 32|16@1+ (0.25,0) [0|16383.75] "rpm"  ESP
+ SG_ ECU_15_CS : 56|8@1+ (1,0) [0|255] ""  ESP
+ SG_ ExtSpeedControlActive : 51|1@1+ (1,0) [0|1] ""  ESP
+ SG_ DrvUnitType : 48|3@1+ (1,0) [0|5] ""  ESP
+ SG_ ECU_15_RC : 52|4@1+ (1,0) [0|15] ""  ESP
+
+BO_ 321 DRS_TX_ID7: 8 YRS
+ SG_ CLU_TYPE : 52|4@1+ (1,0) [0|15] "-"  ESP
+ SG_ CLU_STAT2 : 8|8@1+ (1,0) [0|255] "-"  ESP
+ SG_ CLU_STAT4 : 24|8@1+ (1,0) [0|255] "-"  ESP
+ SG_ CLU_STAT1 : 0|8@1+ (1,0) [0|255] "-"  ESP
+ SG_ CLU_DIAG : 40|8@1+ (1,0) [0|255] "-"  ESP
+ SG_ CLU_STAT5 : 32|8@1+ (1,0) [0|255] "-"  ESP
+ SG_ MSG_CNT_DRS_TX_ID7 : 48|4@1+ (1,0) [0|15] "-"  ESP
+ SG_ CLU_STAT3 : 16|8@1+ (1,0) [0|255] "-"  ESP
+ SG_ CRC_DRS_TX_ID7 : 56|8@1+ (1,0) [0|255] "-"  ESP
+
+BO_ 320 DRS_TX_ID2: 8 YRS
+ SG_ Reserve3 : 24|8@1+ (1,0) [0|255] ""  ESP
+ SG_ AX1_STAT : 52|4@1+ (1,0) [0|15] ""  ESP
+ SG_ AX1 : 32|16@1+ (0.0001274,-4.1745) [-4.1745|4.1745] "g"  ESP
+ SG_ PSIPP_STAT : 20|4@1+ (1,0) [0|0] ""  ESP
+ SG_ CRC_DRS_TX_ID2 : 56|8@1+ (1,0) [0|255] "-"  ESP
+ SG_ MSG_CNT_DRS_TX_ID2 : 48|4@1+ (1,0) [0|0] ""  ESP
+ SG_ PSIPP : 0|16@1+ (0.125,-4096) [-4096|4095] "°/s?"  ESP
+
+BO_ 304 DRS_TX_ID1: 8 YRS
+ SG_ CLU_STAT : 16|4@1+ (1,0) [0|15] ""  ESP
+ SG_ MSG_CNT_DRS_TX_ID1 : 48|4@1+ (1,0) [0|15] "-"  ESP
+ SG_ PSIP1_STAT : 20|4@1+ (1,0) [0|15] ""  ESP
+ SG_ AY1 : 32|16@1+ (0.00012742,-4.1768) [-4.1768|4.1736697] "g"  ESP
+ SG_ CRC_DRS_TX_ID1 : 56|8@1+ (1,0) [0|255] "-"  ESP
+ SG_ PSIP1 : 0|16@1+ (0.005,-163.84) [-163.84|163.83] "deg/s"  ESP
+ SG_ AY1_STAT : 52|4@1+ (1,0) [0|0] ""  ESP
+ SG_ PSIP_EXT_STAT : 24|8@1+ (1,0) [0|0] ""  ESP
+
+BO_ 2 DRS_RX_ID0: 8 ESP
+ SG_ KeepQuiet : 21|1@1+ (1,0) [0|1] ""  YRS
+ SG_ MSG_CNT_DRS_RX_ID0 : 48|4@1+ (1,0) [0|15] "-"  YRS
+ SG_ CcpActive : 0|1@1+ (1,0) [0|0] ""  YRS
+ SG_ OperationMode : 23|1@1+ (1,0) [0|0] ""  YRS
+ SG_ CRC_DRS_RX_ID0 : 56|8@1+ (1,0) [0|255] "-"  YRS
+ SG_ MountPosition : 18|3@1+ (1,0) [0|0] ""  YRS
+ SG_ IncIgnCounter : 16|1@1+ (1,0) [0|0] ""  YRS
+ SG_ REQUEST_4 : 24|8@1+ (1,0) [0|255] "-"  YRS
+ SG_ ResetSensor : 22|1@1+ (1,0) [0|1] ""  YRS
+ SG_ PTR_DIAG : 40|8@1+ (1,0) [0|0] ""  YRS
+ SG_ SignalFormat : 1|1@1+ (1,0) [0|0] ""  YRS
+ SG_ DelErrorMem : 17|1@1+ (1,0) [0|1] ""  YRS
+ SG_ REQUEST_2 : 8|8@1+ (1,0) [0|255] "-"  YRS
+
+BO_ 130 ESP_03: 8 ESP
+ SG_ ESP_03_RC : 52|4@1+ (1,0) [0|15] ""  EMS
+ SG_ WheelDirectionInfo_RR : 41|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ WheelDirectionInfo_RL : 33|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ WheelSpeed_RR : 16|16@1+ (0.01,0) [0|655.34] "km/h"  EMS
+ SG_ WheelSpeed_ValueError_RL : 32|1@1+ (1,0) [0|1] ""  EMS
+ SG_ WheelSpeed_ValueError_RR : 40|1@1+ (1,0) [0|1] ""  EMS
+ SG_ WheelSpeed_RL : 0|16@1+ (0.01,0) [0|655.34] "km/h"  EMS
+ SG_ ESP_03_CS : 56|8@1+ (1,0) [0|255] ""  EMS
+
+BO_ 129 ESP_02: 8 ESP
+ SG_ WheelDirectionInfo_FL : 33|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ESP_02_RC : 52|4@1+ (1,0) [0|15] ""  EMS
+ SG_ ESP_02_CS : 56|8@1+ (1,0) [0|255] ""  EMS
+ SG_ WheelSpeed_ValueError_FR : 40|1@1+ (1,0) [0|1] ""  EMS
+ SG_ WheelSpeed_FL : 0|16@1+ (0.01,0) [0|655.34] "km/h"  EMS
+ SG_ WheelSpeed_ValueError_FL : 32|1@1+ (1,0) [0|1] ""  EMS
+ SG_ WheelDirectionInfo_FR : 41|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ WheelSpeed_FR : 16|16@1+ (0.01,0) [0|655.34] "km/h"  EMS
+
+BO_ 256 ESP_04: 8 ESP
+ SG_ Bls_Out : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CtlActiveAbs : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CtlActiveHDC : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BLS_Fault : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CtlActiveTcs : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESP_Lamp : 17|1@1+ (1,0) [0|1] ""  EMS
+ SG_ CddActive_2 : 48|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ CtlActiveVdc : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESP_04_CS : 56|8@1+ (1,0) [0|255] ""  EMS
+ SG_ CDPDecelActive : 24|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ AVH_Active : 18|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ RequestToEPB : 36|2@1+ (1,0) [0|3] "-" Vector__XXX
+ SG_ VehicleSpeed_ValueError : 16|1@1+ (1,0) [0|1] ""  EMS
+ SG_ Bla : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EBD_Lamp : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CtlActiveEbd : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ABS_Lamp : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HDC_rejected : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EmergencyBraking : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehicleSpeed : 0|16@1+ (0.01,0) [0|655.34] "km/h"  EMS
+ SG_ CDPDecelAvailable : 38|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ Gearshift_Inhibit : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TCS_Fault : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PEBWarningLampReq : 39|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ Passive_Lamp : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HDC_SpeedLimit : 40|8@1+ (1,0) [0|255] "Km/h" Vector__XXX
+ SG_ HDC_Activated : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESP_04_RC : 52|4@1+ (1,0) [0|15] ""  EMS
+
+
+
+CM_ BU_ YRS "YRS: Yaw Rate Sensor";
+CM_ BU_ ESP "ESP: Electronic Stability Program";
+CM_ BU_ EMS "EMS: Engine Management System";
+CM_ SG_ 306 AX_STAT "Qualifier for longitudinal acceleration export signal
+xx00 Signal in specification
+xx01 Sensor not available
+xx10 Signal failure
+xx11 Reserved
+x0xx Initialization finished
+x1xx Initialization running
+0xxx Reserved
+1xxx Reserved";
+CM_ SG_ 306 Reserve2 "Reserve Signal. Coded with 00h";
+CM_ SG_ 306 AX "Longitudinal acceleration signal routed by ESP ";
+CM_ SG_ 306 Reserve3 "Reserve. Coded 00h";
+CM_ SG_ 306 ESP_YRS_03_RC "Rolling Counter [0 - 15]";
+CM_ SG_ 306 HardCoded "Hard coded with xx01 = sensor not available as PSIPP parameter not supported";
+CM_ SG_ 306 ESP_YRS_03_CS "<Checksum:CRC8_SAEJ1850>
+Checksum CRC8_SAEJ1850";
+CM_ SG_ 306 NotSupported "Not supported. Coded with FFFFh";
+CM_ SG_ 128 BMsr "Drag torque control activation bit";
+CM_ SG_ 128 BAsc "Target reduced engine torque (slow + fast) activation bit";
+CM_ SG_ 128 ESP_01_CS "<Checksum:CRC8_SAEJ1850>
+Checksum CRC8_SAEJ1850";
+CM_ SG_ 128 MMotInc "Target increased engine torque (drag torque control) including all the losses.";
+CM_ SG_ 128 MMotRedFast "Target reduced engine torque (fast) including all the losses.";
+CM_ SG_ 128 MMotRed "Target reduced engine torque (slow) including all the losses.";
+CM_ SG_ 128 ESP_01_RC "Rolling Counter [0 - 15]";
+CM_ SG_ 134 M_DriverRequest "Driver & cruise control requested torque limited by the maximum powertrain torque. ";
+CM_ SG_ 134 MotPedPos_Driver "Accelerator pedal position requested by driver";
+CM_ SG_ 134 nICEngineSpeed2 "Internal combustion engine: Engine speed ";
+CM_ SG_ 134 ECU_15_CS "<Checksum:CRC8_SAEJ1850>
+Checksum CRC8_SAEJ1850";
+CM_ SG_ 134 ExtSpeedControlActive "An external speed control - e.g. cruise control - is active";
+CM_ SG_ 134 DrvUnitType "Propulsion concept";
+CM_ SG_ 134 ECU_15_RC "Rolling Counter [0 - 15]";
+CM_ SG_ 321 CLU_TYPE "Sensor Type:
+0010b: sensorcluster DRS-MM7.zc";
+CM_ SG_ 321 CLU_STAT2 "System Status:
+
+Bit 0: PSIP1_FAILURE: permanent yawrate failure.
+Bit 1: AY_FAILURE: permanent lateral acceleration failure
+Bit 2: Reserved
+Bit 3: AX_FAILURE: permanent logitudinal acceleration failure
+Bit 4: Reserved
+Bit 5: Reserved
+Bit 6: Reserve";
+CM_ SG_ 321 CLU_STAT4 "Reserved";
+CM_ SG_ 321 CLU_STAT1 "MCU Status:
+
+Bit 0: MSG_CRC_FAILURE: this bit is used to signalized a CRC inside ECU request.
+Bit 1: Reserved
+Bit 2: Reserved
+Bit 3: Sensor_internal_failure: a failure of sensor internal components is detected.
+Bit 4: Synchronisation_failure_detecte";
+CM_ SG_ 321 CLU_DIAG "Diagnosis information:
+The content of this byte is triggered by setting PTR_INFO in RX_ID0.
+PTR_INFO represents a pointer to the text block. Each time a text block is completed, a terminating character 0x00 is sent.
+A text block transmission can be int";
+CM_ SG_ 321 CLU_STAT5 "Bit 0: Reserved
+Bit 1 - 5: Diag_Byte_Nr:
+              Current index of CLU_DIAG character inside of its diag.text block
+Bit 6: UNLOCK_ERR_MEM_ACK:
+         Acknowledge to the UNLOCK_ERROR_MEM request from Request - Identifier ID0 message.
+Bit 7: Res";
+CM_ SG_ 321 MSG_CNT_DRS_TX_ID7 "Message counter [0-15]
+MSG_CNT is used by the ECU to verify the sensor answers to reach ECU requests. It is repeated by the sensor in case of synchronous transmission mode
+If Asynchronous transmission is selected MSG_CNT is incremented by the sensor its";
+CM_ SG_ 321 CLU_STAT3 "Reserved";
+CM_ SG_ 321 CRC_DRS_TX_ID7 "Message CRC:
+CRC is calculated over Byte 0 - 6 of the request message according to J1850 standard.";
+CM_ SG_ 320 Reserve3 "Reserve. Coded 00h";
+CM_ SG_ 320 AX1_STAT "Qualifier for longitudinal acceleration export signal
+xx00 Signal in specification
+xx01 Sensor not available
+xx10 Signal failure
+xx11 Reserved
+x0xx Initialization finished
+x1xx Initialization running
+0xxx Reserved
+1xxx Reserved";
+CM_ SG_ 320 AX1 "Longitudinal acceleration signal routed by ESP ";
+CM_ SG_ 320 CRC_DRS_TX_ID2 "Message CRC:
+CRC is calculated over Byte 0 - 6 of the request message according to J1850 standard.";
+CM_ SG_ 320 MSG_CNT_DRS_TX_ID2 "Message counter [0-15]
+MSG_CNT is used by the ECU to verify the sensor answers to reach ECU requests. It is repeated by the sensor in case of synchronous transmission mode
+If Asynchronous transmission is selected MSG_CNT is incremented by the sensor its";
+CM_ SG_ 304 CLU_STAT "Sensor cluster status signal routed through ESP
+xx00 Reserved
+xx01 Reserved
+xx10 Reserved
+xx11 Reserved
+x0xx No sync underflow detected
+x1xx Sync underflow detected
+0xxx No sync failure detected
+1xxx Sync failure detected";
+CM_ SG_ 304 MSG_CNT_DRS_TX_ID1 "Message counter [0-15]
+MSG_CNT is used by the ECU to verify the sensor answers to reach ECU requests. It is repeated by the sensor in case of synchronous transmission mode
+If Asynchronous transmission is selected MSG_CNT is incremented by the sensor its";
+CM_ SG_ 304 PSIP1_STAT "Qualifier for yaw rate export signal
+xx00 Signal in specification
+xx01 Sensor not available
+xx10 Signal failure
+xx11 Reserved
+x0xx Initialization finished
+x1xx Initialization running
+0xxx Reserved
+1xxx Reserved";
+CM_ SG_ 304 CRC_DRS_TX_ID1 "Message CRC:
+CRC is calculated over Byte 0 - 6 of the request message according to J1850 standard.";
+CM_ SG_ 304 PSIP1 "Yaw rate signal routed through ESP. Signal limited by SW to +/-100 degree per sec";
+CM_ SG_ 2 KeepQuiet "KEEP_QUIET:
+By sending this bit the ECU urges the sensor to stop transmitting CAN messages.
+The sensor will start sending again, if a request message RxDRS_RX_ID0 with KEEP_QUIET = 0 is received.";
+CM_ SG_ 2 MSG_CNT_DRS_RX_ID0 "Message counter [0-15]
+MSG_CNT is used by the ECU to verify the sensor answers to reach ECU requests. It is repeated by the sensor in case of synchronous transmission mode
+If Asynchronous transmission is selected MSG_CNT is incremented by the sensor its";
+CM_ SG_ 2 CRC_DRS_RX_ID0 "Message CRC:
+CRC is calculated over Byte 0 - 6 of the request message according to J1850 standard.";
+CM_ SG_ 2 MountPosition "Mount position indication:
+000b = Standard output of the sensor values
+001b = Housing rotated by +90? around the Z- axis
+010b = Housing rotated by +180? around the Z- axis
+011b = Housing rotated by +270? around the Z- axis
+100b = MOUNT_POSITION 000 r";
+CM_ SG_ 2 REQUEST_4 "Reserved";
+CM_ SG_ 2 ResetSensor "RESET:
+After RESET = 1 is received the sensor performs a reset.";
+CM_ SG_ 2 PTR_DIAG "Diagnosis pointer:
+PTR_INFO is used to request sensor information, which is separated in text blocks (0x00 - 0x0A).
+This can be done directly by sending the corresponding text block number.";
+CM_ SG_ 2 SignalFormat "FORMAT_CAN_SIGNALS
+0x0 = Intel Format
+0x1 = Motorola Format";
+CM_ SG_ 2 DelErrorMem "UNLOCK_ERROR_MEM
+unlocks the error memory for operation";
+CM_ SG_ 2 REQUEST_2 "System function demands.
+This byte is considered tos end commands to the sensor.
+At present it is not used and therefore reserved.";
+CM_ SG_ 130 ESP_03_RC "Rolling Counter [0 - 15]";
+CM_ SG_ 130 WheelDirectionInfo_RR "Direction/stillstand info for rear right wheel";
+CM_ SG_ 130 WheelDirectionInfo_RL "Direction/stillstand info for rear left wheel";
+CM_ SG_ 130 WheelSpeed_RR "Wheel speed of rear right wheel";
+CM_ SG_ 130 WheelSpeed_ValueError_RL "Indicates if the signal WheelSpeed_RL has valid value";
+CM_ SG_ 130 WheelSpeed_ValueError_RR "Indicates if the signal WheelSpeed_RR has valid value";
+CM_ SG_ 130 WheelSpeed_RL "Wheel speed of rear left wheel";
+CM_ SG_ 130 ESP_03_CS "<Checksum:CRC8_SAEJ1850>
+Checksum CRC8_SAEJ1850";
+CM_ SG_ 129 WheelDirectionInfo_FL "Direction/stillstand info for front left wheel";
+CM_ SG_ 129 ESP_02_RC "Rolling Counter [0 - 15]";
+CM_ SG_ 129 ESP_02_CS "<Checksum:CRC8_SAEJ1850>
+Checksum CRC8_SAEJ1850";
+CM_ SG_ 129 WheelSpeed_ValueError_FR "Indicates if the signal WheelSpeed_FR has valid value";
+CM_ SG_ 129 WheelSpeed_FL "Wheel speed of front left wheel";
+CM_ SG_ 129 WheelSpeed_ValueError_FL "Indicates if the signal WheelSpeed_FL has valid value";
+CM_ SG_ 129 WheelDirectionInfo_FR "Direction/stillstand info for front right wheel";
+CM_ SG_ 129 WheelSpeed_FR "Wheel speed of front right wheel";
+CM_ SG_ 256 Bls_Out "Brake Light Switch. Indicates brake pedal pressing status (derived from brake light switch and brake switch)";
+CM_ SG_ 256 CtlActiveAbs "Indicates activity of ABS control";
+CM_ SG_ 256 CtlActiveHDC "HDC controller activity indication";
+CM_ SG_ 256 BLS_Fault "Brake Light Switch fault indication.";
+CM_ SG_ 256 CtlActiveTcs "Indicates activity of TCS control";
+CM_ SG_ 256 ESP_Lamp "ESP lamp control signal for HMI.";
+CM_ SG_ 256 CddActive_2 "Indicates cdd control active (Controlled Deceleration for Driver Assistant Systems)
+$0 = Inactive
+$1 = Active
+(CddActive duplicata)";
+CM_ SG_ 256 CtlActiveVdc "Indicates activity of VDC control (VDC= ESP function to stabilize the vehicle; not the differential function)";
+CM_ SG_ 256 ESP_04_CS "<Checksum:CRC8_SAEJ1850>
+Checksum CRC8_SAEJ1850";
+CM_ SG_ 256 CDPDecelActive "Indicates that deceleration request from EPB is executed
+$0 = Not Active
+$1 = Active";
+CM_ SG_ 256 AVH_Active "Feedback to EPB that indicates hydraulic holding
+$0 = Not Active
+$1 = Active";
+CM_ SG_ 256 RequestToEPB "ESP request to open or close the park brake
+$0 = Not Initialized
+$1 = No Request
+$2 = Release Brake
+$3 = Lock Brake";
+CM_ SG_ 256 VehicleSpeed_ValueError "Indicates if the signal vehicleSpeed has valid value";
+CM_ SG_ 256 Bla "Brake Light Activation. Indicates braking via driver or via other functions.";
+CM_ SG_ 256 EBD_Lamp "EBD function or booster fault indication for BK-Lamp control.";
+CM_ SG_ 256 CtlActiveEbd "Indicates activity of EBD control";
+CM_ SG_ 256 ABS_Lamp "ABS lamp control signal for HMI and ABS function fault indication";
+CM_ SG_ 256 HDC_rejected "HDC activation rejected, if driver presses HDC switch in wrong driving mode.";
+CM_ SG_ 256 EmergencyBraking "$0 = No emergency braking / Failure
+$1 = Emergency braking ";
+CM_ SG_ 256 VehicleSpeed "calculated vehicle speed value";
+CM_ SG_ 256 CDPDecelAvailable "Indicates that CDP is available for decelerating the vehicle
+$0 = Not Available
+$1 = Available";
+CM_ SG_ 256 Gearshift_Inhibit "During critical activity in ESP control unit, request to gearbox control unit to inhibit gear shifting.";
+CM_ SG_ 256 TCS_Fault "TCS function fault indication";
+CM_ SG_ 256 PEBWarningLampReq "Activate animation in IC to inform user that the vehicle was braked in both of the following cases:
+- Automatic emergency braking activation without driver braking
+- Automatic emergency braking activation with driver brake assist";
+CM_ SG_ 256 Passive_Lamp "Control signal to HMI to control passive lamp. (degraded state of ESP CU functions)";
+CM_ SG_ 256 HDC_SpeedLimit "Indicates the current speed limitation due to a Hill Descent Assist phase";
+CM_ SG_ 256 HDC_Activated "Indicates that driver has activated HDC function using the HDC switch. (not controller status)";
+CM_ SG_ 256 ESP_04_RC "Rolling Counter [0 - 15]";
+BA_DEF_ SG_  "SystOutputRelatedReq" STRING ;
+BA_DEF_ SG_  "VNSigHSLocalIgnitionOn" ENUM  "No","Yes";
+BA_DEF_ SG_  "VNSigHSLocalIgnitionOff" ENUM  "No","Yes";
+BA_DEF_ SG_  "VNSigHSLocalIgnitionDelayed" ENUM  "No","Yes";
+BA_DEF_ SG_  "VNSigHSLocalDiagnostics" ENUM  "No","Yes";
+BA_DEF_ SG_  "Timeout" INT 0 100000;
+BA_DEF_ SG_  "State2" STRING ;
+BA_DEF_ SG_  "State1" STRING ;
+BA_DEF_ SG_  "State0" STRING ;
+BA_DEF_ SG_  "SigLongName" STRING ;
+BA_DEF_ SG_  "RID" STRING ;
+BA_DEF_ SG_  "NWM-WakeupAllowed" ENUM  "No","Yes";
+BA_DEF_ SG_  "ImplementLevel" ENUM  "PtA_Level","PtB_Level0","PtB_Level1","PtC_Level";
+BA_DEF_ SG_  "GenSigTimeoutTime" INT 0 30000;
+BA_DEF_ SG_  "GenSigStartValue" INT -2147483648 2147483647;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","vector_leerstring";
+BA_DEF_ SG_  "GenSigSNA" STRING ;
+BA_DEF_ SG_  "GenSigInactiveValue" INT -2147483648 2147483647;
+BA_DEF_ SG_  "FlexKomSigStartValue" STRING ;
+BA_DEF_ SG_  "FlexKomSigStartPos" INT 0 63;
+BA_DEF_ SG_  "FlexKomSigName" STRING ;
+BA_DEF_ SG_  "FlexKomSigLaenge" INT 0 64;
+BA_DEF_ SG_  "FlexKomSID" INT 0 2147483647;
+BA_DEF_ SG_  "FlexKomIsMotorola" ENUM  "nein","ja";
+BA_DEF_ SG_  "FlexKomComment" STRING ;
+BA_DEF_ SG_  "EnableSignalCallback" INT 0 0;
+BA_DEF_ SG_  "EnableAutoIncrement" INT 0 0;
+BA_DEF_ SG_  "DataType" ENUM  "SWU";
+BA_DEF_ SG_  "ClearAfterDecode" INT 0 0;
+BA_DEF_ SG_  "GenSigCycleTimeActive" INT 0 0;
+BA_DEF_ SG_  "GenSigCycleTime" INT 0 0;
+BA_DEF_ BO_  "TpTxIndex" INT 0 99;
+BA_DEF_ BO_  "NmMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "NWM-Botschaft" ENUM  "nein","ja";
+BA_DEF_ BO_  "MsgLongName" STRING ;
+BA_DEF_ BO_  "GenMsgStartValue" STRING ;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","Spontaneous";
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 999999;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 50000;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 50000;
+BA_DEF_ BO_  "DiagUudtResponse" ENUM  "false","true";
+BA_DEF_ BO_  "DiagState" ENUM  "nein","ja";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "CanMsgMinLen" INT 0 8;
+BA_DEF_ BO_  "App-Botschaft" ENUM  "nein","ja";
+BA_DEF_ BU_  "TpOwnSystemEcuNumber" HEX 0 255;
+BA_DEF_ BU_  "TpNodeBaseAddress" HEX 0 65535;
+BA_DEF_ BU_  "NodeLongName" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "NmStationAddress" INT 0 63;
+BA_DEF_ BU_  "NmNode" ENUM  "no","yes";
+BA_DEF_ BU_  "NetId" INT 0 63;
+BA_DEF_ BU_  "NWM-Stationsadresse" HEX 0 63;
+BA_DEF_ BU_  "NWM-Knoten" ENUM  "nein","ja";
+BA_DEF_ BU_  "IlUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_  "VersionYear" INT 0 99;
+BA_DEF_  "VersionWeek" INT 0 53;
+BA_DEF_  "VersionNumber" INT 0 65535;
+BA_DEF_  "Version" STRING ;
+BA_DEF_  "SamplePointMin" FLOAT 0 100;
+BA_DEF_  "SamplePointMax" FLOAT 0 100;
+BA_DEF_  "NmMessageCount" INT 1 255;
+BA_DEF_  "NmBaseAddress" HEX 1024 1087;
+BA_DEF_  "NWM-Typ" ENUM  "zentral (MB-W210)","dezentral (MB-OSAN)","keines","VAG-OSEK","BMW-OSEK","PAG-OSEK","DBAG-OSEK";
+BA_DEF_  "NWM-Basisadresse" HEX 0 536870911;
+BA_DEF_  "NWID" HEX 0 255;
+BA_DEF_  "NBTMin" INT 0 255;
+BA_DEF_  "NBTMax" INT 0 255;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BaudRate" INT 0 1000000;
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_REL_ BU_SG_REL_  "SystInputRelatedReq" STRING ;
+BA_DEF_DEF_  "SystOutputRelatedReq" "NA";
+BA_DEF_DEF_  "VNSigHSLocalIgnitionOn" "Yes";
+BA_DEF_DEF_  "VNSigHSLocalIgnitionOff" "No";
+BA_DEF_DEF_  "VNSigHSLocalIgnitionDelayed" "Yes";
+BA_DEF_DEF_  "VNSigHSLocalDiagnostics" "No";
+BA_DEF_DEF_  "Timeout" 0;
+BA_DEF_DEF_  "State2" "Description";
+BA_DEF_DEF_  "State1" "Description";
+BA_DEF_DEF_  "State0" "Description";
+BA_DEF_DEF_  "SigLongName" "";
+BA_DEF_DEF_  "RID" "";
+BA_DEF_DEF_  "NWM-WakeupAllowed" "";
+BA_DEF_DEF_  "ImplementLevel" "PtB_Level0";
+BA_DEF_DEF_  "GenSigTimeoutTime" 3000;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigSNA" "";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "FlexKomSigStartValue" "";
+BA_DEF_DEF_  "FlexKomSigStartPos" 0;
+BA_DEF_DEF_  "FlexKomSigName" "";
+BA_DEF_DEF_  "FlexKomSigLaenge" 0;
+BA_DEF_DEF_  "FlexKomSID" 0;
+BA_DEF_DEF_  "FlexKomIsMotorola" "nein";
+BA_DEF_DEF_  "FlexKomComment" "";
+BA_DEF_DEF_  "EnableSignalCallback" 0;
+BA_DEF_DEF_  "EnableAutoIncrement" 0;
+BA_DEF_DEF_  "DataType" "SWU";
+BA_DEF_DEF_  "ClearAfterDecode" 0;
+BA_DEF_DEF_  "GenSigCycleTimeActive" 0;
+BA_DEF_DEF_  "GenSigCycleTime" 0;
+BA_DEF_DEF_  "TpTxIndex" 0;
+BA_DEF_DEF_  "NmMessage" "no";
+BA_DEF_DEF_  "NWM-Botschaft" "nein";
+BA_DEF_DEF_  "MsgLongName" "";
+BA_DEF_DEF_  "GenMsgStartValue" "0";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "DiagUudtResponse" "false";
+BA_DEF_DEF_  "DiagState" "nein";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "CanMsgMinLen" 0;
+BA_DEF_DEF_  "App-Botschaft" "nein";
+BA_DEF_DEF_REL_ "SystInputRelatedReq" "NA";
+BA_DEF_DEF_  "TpOwnSystemEcuNumber" 0;
+BA_DEF_DEF_  "TpNodeBaseAddress" 0;
+BA_DEF_DEF_  "NodeLongName" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmNode" "no";
+BA_DEF_DEF_  "NetId" 0;
+BA_DEF_DEF_  "NWM-Stationsadresse" 0;
+BA_DEF_DEF_  "NWM-Knoten" "nein";
+BA_DEF_DEF_  "IlUsed" "Yes";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "VersionYear" 14;
+BA_DEF_DEF_  "VersionWeek" 17;
+BA_DEF_DEF_  "VersionNumber" 0;
+BA_DEF_DEF_  "Version" "1.00";
+BA_DEF_DEF_  "SamplePointMin" 75;
+BA_DEF_DEF_  "SamplePointMax" 81.25;
+BA_DEF_DEF_  "NmMessageCount" 64;
+BA_DEF_DEF_  "NmBaseAddress" 1024;
+BA_DEF_DEF_  "NWM-Typ" "DBAG-OSEK";
+BA_DEF_DEF_  "NWM-Basisadresse" 1024;
+BA_DEF_DEF_  "NWID" 1;
+BA_DEF_DEF_  "NBTMin" 10;
+BA_DEF_DEF_  "NBTMax" 20;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BaudRate" 0;
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "Manufacturer" "NAMI";
+BA_ "BaudRate" 500000;
+BA_ "Baudrate" 500000;
+BA_ "BusType" "CAN";
+BA_ "NmType" "None";
+BA_ "Manufacturer" "NAMI";
+BA_ "DBName" "ESPCAN";
+BA_ "GenMsgSendType" BO_ 306 0;
+BA_ "GenMsgCycleTime" BO_ 306 10;
+BA_ "GenMsgSendType" BO_ 128 0;
+BA_ "GenMsgCycleTime" BO_ 128 10;
+BA_ "GenMsgSendType" BO_ 134 0;
+BA_ "GenMsgCycleTime" BO_ 134 10;
+BA_ "GenMsgSendType" BO_ 321 0;
+BA_ "GenMsgCycleTime" BO_ 321 10;
+BA_ "GenMsgSendType" BO_ 320 0;
+BA_ "GenMsgCycleTime" BO_ 320 10;
+BA_ "GenMsgSendType" BO_ 304 0;
+BA_ "GenMsgCycleTime" BO_ 304 10;
+BA_ "GenMsgSendType" BO_ 2 0;
+BA_ "GenMsgCycleTime" BO_ 2 10;
+BA_ "GenMsgSendType" BO_ 130 0;
+BA_ "GenMsgCycleTime" BO_ 130 10;
+BA_ "GenMsgSendType" BO_ 129 0;
+BA_ "GenMsgCycleTime" BO_ 129 10;
+BA_ "GenMsgSendType" BO_ 256 0;
+BA_ "GenMsgCycleTime" BO_ 256 20;
+BA_ "ImplementLevel" SG_ 306 AX_STAT 0;
+BA_ "GenSigSendType" SG_ 306 AX_STAT 7;
+BA_ "ImplementLevel" SG_ 306 Reserve2 0;
+BA_ "GenSigSendType" SG_ 306 Reserve2 7;
+BA_ "ImplementLevel" SG_ 306 AX 0;
+BA_ "GenSigStartValue" SG_ 306 AX 32767;
+BA_ "GenSigSendType" SG_ 306 AX 7;
+BA_ "ImplementLevel" SG_ 306 Reserve3 0;
+BA_ "GenSigSendType" SG_ 306 Reserve3 7;
+BA_ "GenSigSendType" SG_ 306 ESP_YRS_03_RC 0;
+BA_ "ImplementLevel" SG_ 306 HardCoded 0;
+BA_ "GenSigSendType" SG_ 306 HardCoded 7;
+BA_ "GenSigSendType" SG_ 306 ESP_YRS_03_CS 0;
+BA_ "ImplementLevel" SG_ 306 NotSupported 0;
+BA_ "GenSigStartValue" SG_ 306 NotSupported 65535;
+BA_ "GenSigSendType" SG_ 306 NotSupported 7;
+BA_ "GenSigSendType" SG_ 128 BMsr 0;
+BA_ "GenSigSendType" SG_ 128 BAsc 0;
+BA_ "GenSigSendType" SG_ 128 ESP_01_CS 0;
+BA_ "GenSigSendType" SG_ 128 MMotInc 0;
+BA_ "GenSigStartValue" SG_ 128 MMotRedFast 60000;
+BA_ "GenSigSendType" SG_ 128 MMotRedFast 0;
+BA_ "GenSigStartValue" SG_ 128 MMotRed 60000;
+BA_ "GenSigSendType" SG_ 128 MMotRed 0;
+BA_ "GenSigSendType" SG_ 128 ESP_01_RC 0;
+BA_ "GenSigSendType" SG_ 134 M_DriverRequest 0;
+BA_ "GenSigSendType" SG_ 134 MotPedPos_Driver 0;
+BA_ "GenSigStartValue" SG_ 134 nICEngineSpeed2 65535;
+BA_ "GenSigSendType" SG_ 134 nICEngineSpeed2 0;
+BA_ "GenSigSendType" SG_ 134 ECU_15_CS 0;
+BA_ "GenSigSendType" SG_ 134 ExtSpeedControlActive 0;
+BA_ "GenSigSendType" SG_ 134 DrvUnitType 0;
+BA_ "GenSigSendType" SG_ 134 ECU_15_RC 0;
+BA_ "GenSigSendType" SG_ 321 CLU_TYPE 0;
+BA_ "GenSigSendType" SG_ 321 CLU_STAT2 0;
+BA_ "GenSigSendType" SG_ 321 CLU_STAT4 0;
+BA_ "GenSigSendType" SG_ 321 CLU_STAT1 0;
+BA_ "GenSigSendType" SG_ 321 CLU_DIAG 0;
+BA_ "GenSigSendType" SG_ 321 CLU_STAT5 0;
+BA_ "GenSigSendType" SG_ 321 MSG_CNT_DRS_TX_ID7 0;
+BA_ "GenSigSendType" SG_ 321 CLU_STAT3 0;
+BA_ "GenSigSendType" SG_ 321 CRC_DRS_TX_ID7 0;
+BA_ "ImplementLevel" SG_ 320 Reserve3 0;
+BA_ "GenSigSendType" SG_ 320 Reserve3 7;
+BA_ "GenSigSendType" SG_ 320 AX1_STAT 0;
+BA_ "GenSigSendType" SG_ 320 AX1 0;
+BA_ "GenSigSendType" SG_ 320 PSIPP_STAT 0;
+BA_ "GenSigSendType" SG_ 320 CRC_DRS_TX_ID2 0;
+BA_ "GenSigSendType" SG_ 320 MSG_CNT_DRS_TX_ID2 0;
+BA_ "GenSigStartValue" SG_ 320 PSIPP 32768;
+BA_ "GenSigSendType" SG_ 320 PSIPP 0;
+BA_ "ImplementLevel" SG_ 304 CLU_STAT 0;
+BA_ "GenSigSendType" SG_ 304 CLU_STAT 7;
+BA_ "GenSigSendType" SG_ 304 MSG_CNT_DRS_TX_ID1 0;
+BA_ "ImplementLevel" SG_ 304 PSIP1_STAT 0;
+BA_ "GenSigSendType" SG_ 304 PSIP1_STAT 7;
+BA_ "GenSigSendType" SG_ 304 AY1 0;
+BA_ "GenSigSendType" SG_ 304 CRC_DRS_TX_ID1 0;
+BA_ "ImplementLevel" SG_ 304 PSIP1 0;
+BA_ "GenSigSendType" SG_ 304 PSIP1 7;
+BA_ "GenSigSendType" SG_ 304 AY1_STAT 0;
+BA_ "GenSigSendType" SG_ 304 PSIP_EXT_STAT 0;
+BA_ "GenSigSendType" SG_ 2 KeepQuiet 0;
+BA_ "GenSigSendType" SG_ 2 MSG_CNT_DRS_RX_ID0 0;
+BA_ "GenSigSendType" SG_ 2 CcpActive 0;
+BA_ "GenSigSendType" SG_ 2 OperationMode 0;
+BA_ "GenSigSendType" SG_ 2 CRC_DRS_RX_ID0 0;
+BA_ "GenSigSendType" SG_ 2 MountPosition 0;
+BA_ "GenSigSendType" SG_ 2 IncIgnCounter 0;
+BA_ "GenSigSendType" SG_ 2 REQUEST_4 0;
+BA_ "GenSigSendType" SG_ 2 ResetSensor 0;
+BA_ "GenSigSendType" SG_ 2 PTR_DIAG 0;
+BA_ "GenSigSendType" SG_ 2 SignalFormat 0;
+BA_ "GenSigSendType" SG_ 2 DelErrorMem 0;
+BA_ "GenSigSendType" SG_ 2 REQUEST_2 0;
+BA_ "ImplementLevel" SG_ 130 ESP_03_RC 0;
+BA_ "GenSigSendType" SG_ 130 ESP_03_RC 7;
+BA_ "ImplementLevel" SG_ 130 WheelDirectionInfo_RR 0;
+BA_ "GenSigSendType" SG_ 130 WheelDirectionInfo_RR 7;
+BA_ "ImplementLevel" SG_ 130 WheelDirectionInfo_RL 0;
+BA_ "GenSigSendType" SG_ 130 WheelDirectionInfo_RL 7;
+BA_ "ImplementLevel" SG_ 130 WheelSpeed_RR 0;
+BA_ "GenSigSendType" SG_ 130 WheelSpeed_RR 7;
+BA_ "ImplementLevel" SG_ 130 WheelSpeed_ValueError_RL 0;
+BA_ "GenSigStartValue" SG_ 130 WheelSpeed_ValueError_RL 1;
+BA_ "GenSigSendType" SG_ 130 WheelSpeed_ValueError_RL 7;
+BA_ "ImplementLevel" SG_ 130 WheelSpeed_ValueError_RR 0;
+BA_ "GenSigStartValue" SG_ 130 WheelSpeed_ValueError_RR 1;
+BA_ "GenSigSendType" SG_ 130 WheelSpeed_ValueError_RR 7;
+BA_ "ImplementLevel" SG_ 130 WheelSpeed_RL 0;
+BA_ "GenSigSendType" SG_ 130 WheelSpeed_RL 7;
+BA_ "ImplementLevel" SG_ 130 ESP_03_CS 0;
+BA_ "GenSigSendType" SG_ 130 ESP_03_CS 7;
+BA_ "ImplementLevel" SG_ 129 WheelDirectionInfo_FL 0;
+BA_ "GenSigSendType" SG_ 129 WheelDirectionInfo_FL 7;
+BA_ "ImplementLevel" SG_ 129 ESP_02_RC 0;
+BA_ "GenSigSendType" SG_ 129 ESP_02_RC 7;
+BA_ "ImplementLevel" SG_ 129 ESP_02_CS 0;
+BA_ "GenSigSendType" SG_ 129 ESP_02_CS 7;
+BA_ "ImplementLevel" SG_ 129 WheelSpeed_ValueError_FR 0;
+BA_ "GenSigStartValue" SG_ 129 WheelSpeed_ValueError_FR 1;
+BA_ "GenSigSendType" SG_ 129 WheelSpeed_ValueError_FR 7;
+BA_ "ImplementLevel" SG_ 129 WheelSpeed_FL 0;
+BA_ "GenSigSendType" SG_ 129 WheelSpeed_FL 7;
+BA_ "ImplementLevel" SG_ 129 WheelSpeed_ValueError_FL 0;
+BA_ "GenSigStartValue" SG_ 129 WheelSpeed_ValueError_FL 1;
+BA_ "GenSigSendType" SG_ 129 WheelSpeed_ValueError_FL 7;
+BA_ "ImplementLevel" SG_ 129 WheelDirectionInfo_FR 0;
+BA_ "GenSigSendType" SG_ 129 WheelDirectionInfo_FR 7;
+BA_ "ImplementLevel" SG_ 129 WheelSpeed_FR 0;
+BA_ "GenSigSendType" SG_ 129 WheelSpeed_FR 7;
+BA_ "ImplementLevel" SG_ 256 Bls_Out 0;
+BA_ "GenSigSendType" SG_ 256 Bls_Out 7;
+BA_ "ImplementLevel" SG_ 256 CtlActiveAbs 0;
+BA_ "GenSigSendType" SG_ 256 CtlActiveAbs 7;
+BA_ "ImplementLevel" SG_ 256 CtlActiveHDC 0;
+BA_ "GenSigSendType" SG_ 256 CtlActiveHDC 7;
+BA_ "ImplementLevel" SG_ 256 BLS_Fault 0;
+BA_ "GenSigSendType" SG_ 256 BLS_Fault 7;
+BA_ "ImplementLevel" SG_ 256 CtlActiveTcs 0;
+BA_ "GenSigSendType" SG_ 256 CtlActiveTcs 7;
+BA_ "ImplementLevel" SG_ 256 ESP_Lamp 0;
+BA_ "GenSigSendType" SG_ 256 ESP_Lamp 7;
+BA_ "ImplementLevel" SG_ 256 CddActive_2 2;
+BA_ "GenSigSendType" SG_ 256 CddActive_2 7;
+BA_ "ImplementLevel" SG_ 256 CtlActiveVdc 0;
+BA_ "GenSigSendType" SG_ 256 CtlActiveVdc 7;
+BA_ "ImplementLevel" SG_ 256 ESP_04_CS 0;
+BA_ "GenSigSendType" SG_ 256 ESP_04_CS 7;
+BA_ "GenSigSendType" SG_ 256 CDPDecelActive 7;
+BA_ "GenSigSendType" SG_ 256 AVH_Active 1;
+BA_ "GenSigSendType" SG_ 256 RequestToEPB 7;
+BA_ "ImplementLevel" SG_ 256 VehicleSpeed_ValueError 0;
+BA_ "GenSigStartValue" SG_ 256 VehicleSpeed_ValueError 1;
+BA_ "GenSigSendType" SG_ 256 VehicleSpeed_ValueError 7;
+BA_ "ImplementLevel" SG_ 256 Bla 0;
+BA_ "GenSigSendType" SG_ 256 Bla 7;
+BA_ "ImplementLevel" SG_ 256 EBD_Lamp 0;
+BA_ "GenSigSendType" SG_ 256 EBD_Lamp 7;
+BA_ "ImplementLevel" SG_ 256 CtlActiveEbd 0;
+BA_ "GenSigSendType" SG_ 256 CtlActiveEbd 7;
+BA_ "ImplementLevel" SG_ 256 ABS_Lamp 0;
+BA_ "GenSigSendType" SG_ 256 ABS_Lamp 7;
+BA_ "ImplementLevel" SG_ 256 HDC_rejected 0;
+BA_ "GenSigSendType" SG_ 256 HDC_rejected 7;
+BA_ "GenSigSendType" SG_ 256 EmergencyBraking 7;
+BA_ "ImplementLevel" SG_ 256 VehicleSpeed 0;
+BA_ "GenSigSendType" SG_ 256 VehicleSpeed 7;
+BA_ "GenSigSendType" SG_ 256 CDPDecelAvailable 1;
+BA_ "ImplementLevel" SG_ 256 Gearshift_Inhibit 0;
+BA_ "GenSigSendType" SG_ 256 Gearshift_Inhibit 7;
+BA_ "ImplementLevel" SG_ 256 TCS_Fault 0;
+BA_ "GenSigSendType" SG_ 256 TCS_Fault 7;
+BA_ "GenSigSendType" SG_ 256 PEBWarningLampReq 1;
+BA_ "ImplementLevel" SG_ 256 Passive_Lamp 0;
+BA_ "GenSigSendType" SG_ 256 Passive_Lamp 7;
+BA_ "ImplementLevel" SG_ 256 HDC_SpeedLimit 2;
+BA_ "GenSigSendType" SG_ 256 HDC_SpeedLimit 7;
+BA_ "ImplementLevel" SG_ 256 HDC_Activated 0;
+BA_ "GenSigSendType" SG_ 256 HDC_Activated 7;
+BA_ "ImplementLevel" SG_ 256 ESP_04_RC 0;
+BA_ "GenSigSendType" SG_ 256 ESP_04_RC 7;
+VAL_ 128 BMsr 1 "active drag torque control; engine torque is requested higher than the driver torque request to the engine ECU" 0 "No drag torque control currently activated; engine torque request is set to default value" ;
+VAL_ 128 BAsc 1 "active torque down control; engine torque is requested lower than the driver torque request to the engine ECU" 0 "No torque down control currently activated; engine torque request is set to default value" ;
+VAL_ 134 MotPedPos_Driver 255 "Fault value" ;
+VAL_ 134 nICEngineSpeed2 65535 "Error value" ;
+VAL_ 134 ExtSpeedControlActive 1 "external control active" 0 "external control inactive" ;
+VAL_ 134 DrvUnitType 5 "C_DrvUnitType_Hybrid_wPureElectricDriving_N" 4 "C_DrvUnitType_Hybrid_noPureElectricDriving_N" 3 "C_DrvUnitType_Electric_N" 2 "C_DrvUnitType_Combustion_wStartStop_N" 1 "C_DrvUnitType_Combustion_N" 0 "C_DrvUnitType_Undef_N" ;
+VAL_ 2 MountPosition 7 "MOUNT_POSITION 011" 6 "MOUNT_POSITION 010" 5 "MOUNT_POSITION 001" 4 "MOUNT_POSITION 000" 3 "Housing rotated by +270? Z- axis" 2 "Housing rotated by +180? Z- axis" 1 "Housing rotated by +90? Z- axis" 0 "Standard output of the sensor values" ;
+VAL_ 2 ResetSensor 1 "Reset" 0 "No Reset" ;
+VAL_ 2 SignalFormat 1 "Motorola Format" 0 "Intel Format" ;
+VAL_ 130 WheelDirectionInfo_RR 3 "direction backward" 2 "direction forward" 1 "standstill" 0 "Direction not defined" ;
+VAL_ 130 WheelDirectionInfo_RL 3 "direction backward" 2 "direction forward" 1 "standstill" 0 "Direction not defined" ;
+VAL_ 130 WheelSpeed_RR 65535 "Invalid value" ;
+VAL_ 130 WheelSpeed_ValueError_RL 1 "Invalid value in wheel speed rear left signal" 0 "Valid value in wheel speed rear left signal" ;
+VAL_ 130 WheelSpeed_ValueError_RR 1 "Invalid value in wheel speed rear right signal" 0 "Valid value in wheel speed rear right signal" ;
+VAL_ 130 WheelSpeed_RL 65535 "Invalid value" ;
+VAL_ 129 WheelDirectionInfo_FL 3 "direction backward" 2 "direction forward" 1 "standstill" 0 "Direction not defined" ;
+VAL_ 129 WheelSpeed_ValueError_FR 1 "Invalid value in wheel speed front right signal" 0 "Valid value in wheel speed front right signal" ;
+VAL_ 129 WheelSpeed_FL 65535 "Invalid value" ;
+VAL_ 129 WheelSpeed_ValueError_FL 1 "Invalid value in wheel speed front left signal" 0 "Valid value in wheel speed front left signal" ;
+VAL_ 129 WheelDirectionInfo_FR 3 "direction backward" 2 "direction forward" 1 "standstill" 0 "Direction not defined" ;
+VAL_ 129 WheelSpeed_FR 65535 "Invalid value" ;
+VAL_ 256 Bls_Out 1 "BLS active or pressed" 0 "BLS inactive or not pressed" ;
+VAL_ 256 CtlActiveAbs 1 "ABS control active" 0 "ABS control not active" ;
+VAL_ 256 CtlActiveHDC 1 "HDC control active currently" 0 "HDC control not active" ;
+VAL_ 256 BLS_Fault 1 "BLS Faulty" 0 "BLS not faulty" ;
+VAL_ 256 CtlActiveTcs 1 "TCS control active" 0 "TCS control not active" ;
+VAL_ 256 ESP_Lamp 1 "ESP Fault" 0 "No Faults" ;
+VAL_ 256 CddActive_2 1 "Active" 0 "Inactive" ;
+VAL_ 256 CtlActiveVdc 1 "VDC control currently active" 0 "VDC control not active" ;
+VAL_ 256 CDPDecelActive 1 "Active" 0 "Not Active" ;
+VAL_ 256 AVH_Active 1 "Active" 0 "Not Active" ;
+VAL_ 256 RequestToEPB 3 "Lock Brake" 2 "Release Brake" 1 "No Request" 0 "Not Initialized" ;
+VAL_ 256 VehicleSpeed_ValueError 1 "Invalid value in vehicle speed signal" 0 "Valid value in vehicle speed signal" ;
+VAL_ 256 Bla 1 "activate brake lights" ;
+VAL_ 256 EBD_Lamp 1 "EBD Fault" 0 "No faults" ;
+VAL_ 256 CtlActiveEbd 1 "EBD control active" 0 "EBD control not active" ;
+VAL_ 256 ABS_Lamp 1 "ABS Fault" 0 "No Faults" ;
+VAL_ 256 HDC_rejected 1 "HDC cannot be activated in current driving mode" 0 "No error" ;
+VAL_ 256 EmergencyBraking 1 "Emergency braking" 0 "No emergency braking / Failure" ;
+VAL_ 256 CDPDecelAvailable 1 "Available" 0 "Not Available" ;
+VAL_ 256 Gearshift_Inhibit 1 "Inhibit gear shift" ;
+VAL_ 256 TCS_Fault 1 "TCS Fault" 0 "No faults" ;
+VAL_ 256 PEBWarningLampReq 1 "Warning requested" 0 "No Warning requested" ;
+VAL_ 256 Passive_Lamp 1 "Passive lamp ON" 0 "Passive lamp OFF" ;
+VAL_ 256 HDC_Activated 1 "HDC function has been activated by driver" 0 "HDC function in inactive state" ;
+

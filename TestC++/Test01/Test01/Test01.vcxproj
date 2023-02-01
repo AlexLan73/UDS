@@ -70,6 +70,12 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>E:\UDS\TestC++\Test01\Test01\Sourse;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>E:\UDS\TestC++\Test01\Test01\Sourse;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -129,11 +135,13 @@
   <ItemGroup>
     <ClCompile Include="Sourse\CAN\CanBasa.cpp" />
     <ClCompile Include="Sourse\CAN\CanTask.cpp" />
+    <ClCompile Include="Sourse\MyQueue.cpp" />
     <ClCompile Include="Test01.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sourse\CAN\CanBasa.h" />
     <ClInclude Include="Sourse\CAN\CanTask.h" />
+    <ClInclude Include="Sourse\MyQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

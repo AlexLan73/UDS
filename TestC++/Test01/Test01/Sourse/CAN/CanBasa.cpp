@@ -12,6 +12,7 @@ namespace CAN
 				this->str1 = str1;
 				ind_i = 31;
 				ind_j = 42;
+				inicial_params();
 		}
 
 
@@ -20,7 +21,19 @@ namespace CAN
 				i = 1;
 				j = 2;
 				ind_i = 11; 
-				ind_j = 22 ;
+				ind_j = 21;
+				inicial_params();
+		}
+
+		inline void CanBasa::inicial_params() 
+		{
+				m0["add"] = &CanBasa::add;
+				m0["sub"] = &CanBasa::subtract;
+				m0["mul"] = &CanBasa::multiply;
+
+				int kk0 = (this->*m0["add"])(10, 21);
+				int kk1 = (this->*m0["sub"])(10, 21);
+				int kk2 = (this->*m0["mul"])(10, 2);
 		}
 
 		void CanBasa::Run0()
@@ -45,9 +58,36 @@ namespace CAN
 				return k;
 		}
 
-		int CanBasa::run_inc(int l) 
+		int CanBasa::run_inc(int l)
 		{
 				return i + l;
+		}
+
+
+//		inline int CanBasa::add(int x, int y)
+		int CanBasa::add(int x, int y)
+		{
+				return x + y;
+		}
+
+		int CanBasa::subtract(int x, int y)
+		{
+				return x - y;
+		}
+
+		void CanBasa::add0(int x, int y)
+		{
+				auto k = x + y;
+		}
+
+		void CanBasa::subtract0(int x, int y)
+		{
+				auto k = x - y;
+		}
+
+		int CanBasa::multiply(int x, int y)
+		{
+				return x * y;
 		}
 
 }

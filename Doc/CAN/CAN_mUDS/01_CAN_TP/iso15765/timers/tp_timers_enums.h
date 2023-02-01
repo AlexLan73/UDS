@@ -1,0 +1,27 @@
+#ifndef TP_TIMERS_ENUMS_H
+#define TP_TIMERS_ENUMS_H
+
+enum tp_timer_state {
+	DEFAULT_STATE = 0,
+	AS_TIMER_STATE = 1,
+	AR_TIMER_STATE = 2,
+	BS_TIMER_STATE = 3,
+	BR_TIMER_STATE = 4,
+	CS_TIMER_STATE = 5,
+	CR_TIMER_STATE = 6,
+	TP_TIMER_IGNORE = 7
+};
+
+enum tp_timer_signal {
+	AS_TIMER = 0,
+	AR_TIMER = 1,
+	BS_TIMER = 2,
+	BR_TIMER = 3,
+	CS_TIMER = 4,
+	CR_TIMER = 5,
+	DEFAULT_TP_TIMER_SIGNAL = 6
+};
+
+
+
+#endif /* TP_TIMERS_ENUMS_H */
