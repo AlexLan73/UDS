@@ -56,7 +56,7 @@ int main()
   setlocale(LC_ALL, "rus");
 
 
-    MyQueue<int> _my_queeue = MyQueue<int>();
+    MyQueue<int> _my_queeue;
     _my_queeue.add_dan(2);
     _my_queeue.add_dan(12);
     _my_queeue.add_dan(22);
@@ -69,6 +69,7 @@ int main()
       if (get<0>(zz))
         _x = get<1>(zz);
       auto sss = zz;
+      std::cout << i << "   "<< get<0>(zz) << "   " << _x << std::endl;
     }
 
     coms _coms;

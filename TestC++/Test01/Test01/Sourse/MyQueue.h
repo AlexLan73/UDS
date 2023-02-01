@@ -18,8 +18,9 @@ namespace my_func
 		class MyQueue
 		{
 				public:
-						MyQueue();
-//						{}
+						MyQueue()
+						{
+						}
 								
 								
 //						void add_dan(T x);

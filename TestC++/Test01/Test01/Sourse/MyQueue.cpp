@@ -4,12 +4,12 @@
 
 namespace my_func 
 {
-		
-		template <class T>
-		my_func::MyQueue<T>::MyQueue()
-		{
-				ind = 10;
-		};
+		//
+		//template <class T>
+		//my_func::MyQueue<T>::MyQueue()
+		//{
+		//		ind = 10;
+		//};
 
 		//template <class T>
 		//void MyQueue<T>::add_dan(T x)
