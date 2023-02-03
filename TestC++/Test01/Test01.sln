@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test01", "Test01\Test01.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestTemplClass", "TestTemplClass\TestTemplClass.vcxproj", "{7C036980-B06E-49F1-A205-093772160F42}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestFind_if", "TestFind_if\TestFind_if.vcxproj", "{6CA19DD6-F112-417D-9405-EF1593A4D352}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{7C036980-B06E-49F1-A205-093772160F42}.Release|x64.Build.0 = Release|x64
 		{7C036980-B06E-49F1-A205-093772160F42}.Release|x86.ActiveCfg = Release|Win32
 		{7C036980-B06E-49F1-A205-093772160F42}.Release|x86.Build.0 = Release|Win32
+		{6CA19DD6-F112-417D-9405-EF1593A4D352}.Debug|x64.ActiveCfg = Debug|x64
+		{6CA19DD6-F112-417D-9405-EF1593A4D352}.Debug|x64.Build.0 = Debug|x64
+		{6CA19DD6-F112-417D-9405-EF1593A4D352}.Debug|x86.ActiveCfg = Debug|Win32
+		{6CA19DD6-F112-417D-9405-EF1593A4D352}.Debug|x86.Build.0 = Debug|Win32
+		{6CA19DD6-F112-417D-9405-EF1593A4D352}.Release|x64.ActiveCfg = Release|x64
+		{6CA19DD6-F112-417D-9405-EF1593A4D352}.Release|x64.Build.0 = Release|x64
+		{6CA19DD6-F112-417D-9405-EF1593A4D352}.Release|x86.ActiveCfg = Release|Win32
+		{6CA19DD6-F112-417D-9405-EF1593A4D352}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
