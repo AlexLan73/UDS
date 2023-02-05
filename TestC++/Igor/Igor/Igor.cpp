@@ -43,6 +43,7 @@ public:
 		{
 				
 				auto itr = find_if(_x.begin(), _x.end(), [&](T v) { return (v > x0); });
+//				auto itr = find_if(_x.begin(), _x.end(), [&](T v) { return (v < x0); });
 				auto _ind = distance(_x.begin(), itr);
 				_ind = _ind > 0 ? _ind - 1 : 0;
 				auto _func = _fun_line[_ind];
