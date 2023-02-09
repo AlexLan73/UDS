@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Convert01": {
+      "commandName": "Project",
+      "commandLineArgs": "\"E:\\UDS\\Example\\CAN\\08-docs\\ESP.dbc\""
+    }
+  }
+}
