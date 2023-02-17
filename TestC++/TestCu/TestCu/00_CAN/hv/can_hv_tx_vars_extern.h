@@ -1,0 +1,19 @@
+#include "can_hv_tx_vars.h"
+extern uint32 count_NAMI_EMS_04;
+extern NAMI_EMS_04 NAMI_EMS_04_frame;
+extern uint32 count_NAMI_EMS_03;
+extern NAMI_EMS_03 NAMI_EMS_03_frame;
+extern uint32 count_NAMI_EMS_02;
+extern NAMI_EMS_02 NAMI_EMS_02_frame;
+extern uint32 count_NAMI_EMS_01;
+extern NAMI_EMS_01 NAMI_EMS_01_frame;
+extern uint32 count_Diag_To_INC;
+extern Diag_To_INC Diag_To_INC_frame;
+extern uint32 count_Diag_To_BMS;
+extern Diag_To_BMS Diag_To_BMS_frame;
+extern uint32 count_Diag_Functional;
+extern Diag_Functional Diag_Functional_frame;
+extern uint32 count_BSC6LIM;
+extern BSC6LIM BSC6LIM_frame;
+extern uint32 count_BSC6COM;
+extern BSC6COM BSC6COM_frame;

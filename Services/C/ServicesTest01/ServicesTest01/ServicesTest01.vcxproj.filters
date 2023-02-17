@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Services">
+      <UniqueIdentifier>{56d1cc30-65e5-41e0-9aab-cd80daed8d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Services\0x1">
+      <UniqueIdentifier>{198f9e5d-f923-4db1-a444-6860e723a751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\GFunc">
+      <UniqueIdentifier>{a9d70036-c4ba-4bcc-a221-8dc5f3db76ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ServicesTest.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Services\Services_0x1\Service_0x1.c">
+      <Filter>Исходные файлы\Services\0x1</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Services\Services_0x1\Service_0x1.h">
+      <Filter>Исходные файлы\Services\0x1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Services\GFunc\CData.h">
+      <Filter>Исходные файлы\GFunc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
