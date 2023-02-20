@@ -139,30 +139,41 @@ void service_0x1(struct ResponseMessage* response, struct RequestMessage* reques
 		}
 
 		request->length = count_byte;
-		request->b = malloc(count_byte * sizeof(byte));
-		byte* byte_prn = &request->b;
+		request->b[0] = 0xC;
+		request->b[1] = 0xE;
+		request->b[2] = 0xF;
+//		request->m[0] = (byte)0x11;
+//		request->m[0] = (byte)0x22;
+//		request->m[0] = (byte)0x33;
+//		request->m[0] = (byte)0x44;
 
-		byte bserv = 0x41;
-		memcpy(&byte_prn, &bserv, 1);
-		int k = 1;
-		int i = 0;
-		while (i< k_pid)
-		{
-				memcpy(&(byte_prn[k]), &rds[i].pid, 1);
-				k++;
-				memcpy(&(byte_prn[k]), &(rds[i].result.b[0]), rds[i].length);
-				k = k + rds[i].length;
-				i++;
-		}
 
-		for (byte i = 0; i < request.length; i++)
-		{
-				byte b_pid = 0xFF;
-				//    byte* d_ptr = &(request.b[i]);
-				byte* d_ptr = &(request);
-				memcpy(&b_pid, &d_ptr, 1);
-				int fff = 1;
-		}
+////		request->b = malloc(count_byte * sizeof(byte));
+//		byte* byte_prn = &request->b;
+//
+//		byte bserv = 0x41;
+//		memcpy(&(byte_prn[0]), &bserv, 1);
+//		int k = 1;
+//		int i = 0;
+//		while (i< k_pid)
+//		{
+//				memcpy(&(byte_prn[k]), &rds[i].pid, 1);
+//				k++;
+//				memcpy(&(byte_prn[k]), &(rds[i].result.b[0]), rds[i].length);
+//				k = k + rds[i].length;
+//				i++;
+//		}
+
+		int sss = 1;
+
+		//for (byte i = 0; i < request.length; i++)
+		//{
+		//		byte b_pid = 0xFF;
+		//		//    byte* d_ptr = &(request.b[i]);
+		//		byte* d_ptr = &(request);
+		//		memcpy(&b_pid, &d_ptr, 1);
+		//		int fff = 1;
+		//}
 
 
 }

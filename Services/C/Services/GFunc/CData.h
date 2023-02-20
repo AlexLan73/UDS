@@ -13,7 +13,8 @@ struct ResponseMessage
 struct RequestMessage
 {
 		byte length;
-		byte* b;
+		byte b[100];
+		byte* m;
 };
 
 //Request current

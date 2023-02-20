@@ -30,6 +30,28 @@ int main(void)
   for (size_t i = 0; i < response.length; i++)
     response.m[i] = responseM[i];
 
+  request.length = 0xAA;
+  request.m = (byte*) malloc(0xFF * sizeof(byte));
+  request.b[0] = 0x0;
+  request.b[1] = 0x1;
+  request.b[2] = 0x2;
+  struct RequestMessage* request_prn = &request;
+
+  byte dfd =0x10;
+  byte* m_prn = &(request.m[0]);
+  memcpy(&m_prn, &dfd, 1);
+  dfd = 0x20;
+  //m_prn = &(request_prn->m[1]);
+  m_prn = (*m_prn + 1); //&(request_prn->m[1]);
+  memcpy(&(m_prn), &dfd, 1);
+  dfd = 0x30;
+  //memcpy(&request.m[2], &dfd, 1);
+  ////dfd = 0x10;
+  //memcpy(&request.m[3], &dfd, 1);
+  ////dfd = 0x50;
+  //memcpy(&request.m[4], &dfd, 1);
+
+//  struct RequestMessage *request_prn = &request;
 //  auto xx = sizeof(request);
   case_request(&response, &request);
 
@@ -37,8 +59,8 @@ int main(void)
   {
     byte b_pid = 0xFF;
 //    byte* d_ptr = &(request.b[i]);
-    byte* d_ptr = &(request);
-    memcpy(&b_pid, &d_ptr, 1);
+    byte d_ptr = request.b[i];
+//    memcpy(&b_pid, &(request.b[i]), 1);
     int fff = 1;
   }
   //				struct ReadDanServic z = rds[i];

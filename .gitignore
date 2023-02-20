@@ -5,6 +5,7 @@
 *.suo
 *.user
 *.sln.docstates
+*.h5
 
 # Build results
 [Dd]ebug/
@@ -18,10 +19,25 @@ bld/
 .vs/
 WINDSAV/
 DesignTimeBuild/
+[L]ib/
+[S]cripts/
+[Dd]b[Dd]ata/
+[Dd]ata/
+raw/
+Archive/
+[Nn]ot[Gg]it
+slprj/
+Htc/
+=======
+raw/
 
 
 # Roslyn cache directories
 *.ide/
+.idea/
+[Ll]og/
+__pycache__/
+
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -36,6 +52,8 @@ TestResult.xml
 [Rr]eleasePS/
 dlldata.c
 
+*.pth
+*.db
 *_i.c
 *_p.c
 *_i.h
