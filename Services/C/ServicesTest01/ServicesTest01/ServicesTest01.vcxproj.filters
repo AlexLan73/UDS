@@ -30,12 +30,18 @@
     <ClCompile Include="..\..\Services\Services_0x1\Service_0x1.c">
       <Filter>Исходные файлы\Services\0x1</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Services\GFunc\Global_Function.c">
+      <Filter>Исходные файлы\GFunc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Services\Services_0x1\Service_0x1.h">
       <Filter>Исходные файлы\Services\0x1</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Services\GFunc\CData.h">
+      <Filter>Исходные файлы\GFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Services\GFunc\Global_Function.h">
       <Filter>Исходные файлы\GFunc</Filter>
     </ClInclude>
   </ItemGroup>

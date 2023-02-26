@@ -135,11 +135,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Services\GFunc\Global_Function.c" />
     <ClCompile Include="..\..\Services\Services_0x1\Service_0x1.c" />
     <ClCompile Include="ServicesTest.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Services\GFunc\CData.h" />
+    <ClInclude Include="..\..\Services\GFunc\Global_Function.h" />
     <ClInclude Include="..\..\Services\Services_0x1\Service_0x1.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
