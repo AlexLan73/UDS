@@ -103,12 +103,11 @@ void service_0x1(struct response_message* response, struct request_message* requ
 				}
 				case 0xD:
 				{
-						struct read_dan_service _rds;
-						_rds.pid = 0xD;
-						_rds.length = 4;
-						_rds.result.l[0] = 0xF;
-						rds[k_pid] = _rds;
-						count_byte = count_byte + _rds.length;
+						rds[k_pid].pid = 0xD;
+						rds[k_pid].length = 4;
+						rds[k_pid].result.l[0] = 0xD;
+						count_byte = count_byte + rds[k_pid].length;
+
 						break;
 				}
 				case 0xE:  // NOLINT(bugprone-branch-clone)

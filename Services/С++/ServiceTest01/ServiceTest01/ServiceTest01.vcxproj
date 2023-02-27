@@ -128,10 +128,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Service\ServiceBase.cpp" />
+    <ClCompile Include="..\Service\Service_02.cpp" />
+    <ClCompile Include="GetServices.cpp" />
     <ClCompile Include="ServiceTest01.cpp" />
+    <ClCompile Include="Service_01.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Service\CData.h" />
+    <ClInclude Include="..\Service\GetServices.h" />
     <ClInclude Include="..\Service\ServiceBase.h" />
+    <ClInclude Include="..\Service\Service_01.h" />
+    <ClInclude Include="..\Service\Service_02.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

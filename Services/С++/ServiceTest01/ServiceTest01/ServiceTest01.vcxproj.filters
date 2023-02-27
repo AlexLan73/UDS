@@ -22,12 +22,33 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="..\Service\ServiceBase.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Servis</Filter>
+    </ClCompile>
+    <ClCompile Include="GetServices.cpp">
+      <Filter>Исходные файлы\Servis</Filter>
+    </ClCompile>
+    <ClCompile Include="Service_01.cpp">
+      <Filter>Исходные файлы\Servis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Service\Service_02.cpp">
+      <Filter>Исходные файлы\Servis</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Service\CData.h">
+      <Filter>Исходные файлы\Servis</Filter>
+    </ClInclude>
     <ClInclude Include="..\Service\ServiceBase.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Исходные файлы\Servis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Service\GetServices.h">
+      <Filter>Исходные файлы\Servis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Service\Service_01.h">
+      <Filter>Исходные файлы\Servis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Service\Service_02.h">
+      <Filter>Исходные файлы\Servis</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
