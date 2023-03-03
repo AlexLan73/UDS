@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{fd4b771e-6daf-4e6b-8c21-edcce5ca780a}</ProjectGuid>
-    <RootNamespace>ServicesTest01</RootNamespace>
+    <ProjectGuid>{595cb992-8664-4ff8-ac96-f94343d88b17}</ProjectGuid>
+    <RootNamespace>ServiceMem</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,12 +70,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>E:\UDS\Services\C\Services\GFunc;$(IncludePath)</IncludePath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>E:\UDS\Services\C\Services\GFunc;$(IncludePath)</IncludePath>
-  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -110,7 +104,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,7 +118,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -135,24 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Services\GFunc\Global_Function.c" />
-    <ClCompile Include="..\..\Services\Service_0x1.c" />
-    <ClCompile Include="..\..\Services\Service_0x2.c" />
-    <ClCompile Include="..\..\Services\Service_0x3.c" />
-    <ClCompile Include="..\..\Services\Service_0x4.c" />
-    <ClCompile Include="..\..\Services\Service_0x5.c" />
-    <ClCompile Include="..\..\Services\Service_0x6.c" />
-    <ClCompile Include="ServicesTest.c" />
+    <ClCompile Include="..\Service\GetServices.cpp" />
+    <ClCompile Include="..\Service\ServiceBase.cpp" />
+    <ClCompile Include="..\Service\Service_01.cpp" />
+    <ClCompile Include="ServiceMem.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Services\GFunc\CData.h" />
-    <ClInclude Include="..\..\Services\GFunc\Global_Function.h" />
-    <ClInclude Include="..\..\Services\Service_0x1.h" />
-    <ClInclude Include="..\..\Services\Service_0x2.h" />
-    <ClInclude Include="..\..\Services\Service_0x3.h" />
-    <ClInclude Include="..\..\Services\Service_0x4.h" />
-    <ClInclude Include="..\..\Services\Service_0x5.h" />
-    <ClInclude Include="..\..\Services\Service_0x6.h" />
+    <ClInclude Include="..\Service\CData.h" />
+    <ClInclude Include="..\Service\GetServices.h" />
+    <ClInclude Include="..\Service\ServiceBase.h" />
+    <ClInclude Include="..\Service\Service_01.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

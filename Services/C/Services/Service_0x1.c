@@ -21,7 +21,6 @@ void service_0x1(struct response_message* response, struct request_message* requ
 						rds[k_pid].result.b[1] = 0x1;
 						rds[k_pid].result.b[2] = 0x2;
 						rds[k_pid].result.b[3] = 0x3;
-						count_byte = count_byte + rds[k_pid].length;
 						break;
 				}
 				case 0x1:
@@ -32,7 +31,6 @@ void service_0x1(struct response_message* response, struct request_message* requ
 						rds[k_pid].result.b[1] = 0x11;
 						rds[k_pid].result.b[2] = 0x12;
 						rds[k_pid].result.b[3] = 0x13;
-						count_byte = count_byte + rds[k_pid].length;
 						break;
 				}
 				case 0x2:
@@ -47,7 +45,6 @@ void service_0x1(struct response_message* response, struct request_message* requ
 						rds[k_pid].result.b[0] = 3;
 						rds[k_pid].result.b[1] = 13;
 						rds[k_pid].result.b[2] = 23;
-						count_byte = count_byte + rds[k_pid].length;
 						break;
 				}
 				case 0x4:
@@ -60,7 +57,6 @@ void service_0x1(struct response_message* response, struct request_message* requ
 						rds[k_pid].pid = 0x5;
 						rds[k_pid].length = 1;
 						rds[k_pid].result.b[0] = 5;
-						count_byte = count_byte + rds[k_pid].length;
 						break;
 				}
 				case 0x6:  // NOLINT(bugprone-branch-clone)
@@ -98,7 +94,6 @@ void service_0x1(struct response_message* response, struct request_message* requ
 						rds[k_pid].pid = 0xC;
 						rds[k_pid].length = 4;
 						rds[k_pid].result.l[0] = 0xC;
-						count_byte = count_byte + rds[k_pid].length;
 						break;
 				}
 				case 0xD:
@@ -106,8 +101,6 @@ void service_0x1(struct response_message* response, struct request_message* requ
 						rds[k_pid].pid = 0xD;
 						rds[k_pid].length = 4;
 						rds[k_pid].result.l[0] = 0xD;
-						count_byte = count_byte + rds[k_pid].length;
-
 						break;
 				}
 				case 0xE:  // NOLINT(bugprone-branch-clone)
@@ -124,7 +117,6 @@ void service_0x1(struct response_message* response, struct request_message* requ
 						rds[k_pid].pid = 0x15;
 						rds[k_pid].length = 2;
 						rds[k_pid].result.w[0] = 0x15;
-						count_byte = count_byte + rds[k_pid].length;
 						break;
 				}
 				case 0x19:
@@ -133,7 +125,6 @@ void service_0x1(struct response_message* response, struct request_message* requ
 						rds[k_pid].length = 2;
 						rds[k_pid].result.b[0] = 0x19;
 						rds[k_pid].result.b[1] = 0x1A;
-						count_byte = count_byte + rds[k_pid].length;
 						break;
 				}
 
@@ -145,13 +136,53 @@ void service_0x1(struct response_message* response, struct request_message* requ
 						rds[k_pid].result.b[1] = 0x21;
 						rds[k_pid].result.b[2] = 0x22;
 						rds[k_pid].result.b[3] = 0x23;
-						count_byte = count_byte + rds[k_pid].length;
+						break;
+				}
+
+				case 0x21:
+				{
+						rds[k_pid].pid = 0x21;
+						rds[k_pid].length = 1;
+						rds[k_pid].result.b[0] = 0x21;
+						break;
+				}
+
+				case 0x30:
+				{
+						rds[k_pid].pid = 0x30;
+						rds[k_pid].length = 1;
+						rds[k_pid].result.b[0] = 0x30;
+						break;
+				}
+
+				case 0x31:
+				{
+						rds[k_pid].pid = 0x31;
+						rds[k_pid].length = 1;
+						rds[k_pid].result.b[0] = 0x31;
+						break;
+				}
+
+				case 0x4D:
+				{
+						rds[k_pid].pid = 0x4D;
+						rds[k_pid].length = 1;
+						rds[k_pid].result.b[0] = 0x4D;
+						break;
+				}
+
+				case 0x4E:
+				{
+						rds[k_pid].pid = 0x4E;
+						rds[k_pid].length = 1;
+						rds[k_pid].result.b[0] = 0x4E;
 						break;
 				}
 
 				default:
 						break;
 				}
+				count_byte = count_byte + rds[k_pid].length;
 				k_pid++;
 		}
 		request->length = count_byte;  // NOLINT(clang-diagnostic-implicit-int-conversion)

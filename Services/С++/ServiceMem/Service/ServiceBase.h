@@ -15,8 +15,7 @@ namespace uds
 				ServiceBase();
 				virtual ~ServiceBase();
 
-//				void get_servise_request(response_message* response, request_message* request);
-				virtual void get_request(response_message* response, request_message* request);
+				virtual void get_request(shared_ptr<response_message> response, shared_ptr<request_message> request);
 
 //		protected:
 
@@ -32,15 +31,10 @@ namespace uds
 						} result{};
 
 				};
-				typedef function<read_dan_service01()> lambda;
+//				typedef function<read_dan_service01()> lambda;
+				typedef function<void()> lambda;
 
-				//				inline void add_lambda(uint8_t i, const lambda f);
-				//				virtual void f_request(uint8_t index, uint8_t pid);
-				//				virtual void f_request(uint8_t* index, uint8_t count, uint8_t pid);
-//				virtual void f_request(response_message* response, request_message* request, uint8_t num_serv_return);
-
-//				inline void form_data_for_can(struct request_message* request, uint8_t num_serv_return);
-				inline void form_data_for_can(request_message* request, uint8_t num_serv_return);
+				inline void form_data_for_can(shared_ptr<request_message> request, uint8_t num_serv_return);
 
 				map<uint8_t, lambda> maps_;
 				read_dan_service01 rds_[6] = {};

@@ -2,7 +2,8 @@
 
 
 
-#include "../../Services/Services_0x1/Service_0x1.h"
+#include "../../Services/Service_0x1.h"
+#include "../../Services/Service_0x2.h"
 #include "../../Services/GFunc/CData.h"
 
 void case_request(struct response_message* response, struct request_message* request)
@@ -17,6 +18,12 @@ void case_request(struct response_message* response, struct request_message* req
       service_0x1(response, request);
       break;
     }
+    case 0x2:
+    {
+      service_0x2(response, request);
+      break;
+    }
+
   default:
     break;
   }

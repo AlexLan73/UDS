@@ -16,9 +16,6 @@
     <Filter Include="Исходные файлы\Services">
       <UniqueIdentifier>{56d1cc30-65e5-41e0-9aab-cd80daed8d65}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Services\0x1">
-      <UniqueIdentifier>{198f9e5d-f923-4db1-a444-6860e723a751}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Исходные файлы\GFunc">
       <UniqueIdentifier>{a9d70036-c4ba-4bcc-a221-8dc5f3db76ce}</UniqueIdentifier>
     </Filter>
@@ -27,22 +24,52 @@
     <ClCompile Include="ServicesTest.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Services\Services_0x1\Service_0x1.c">
-      <Filter>Исходные файлы\Services\0x1</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Services\GFunc\Global_Function.c">
       <Filter>Исходные файлы\GFunc</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Services\Service_0x1.c">
+      <Filter>Исходные файлы\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Services\Service_0x2.c">
+      <Filter>Исходные файлы\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Services\Service_0x3.c">
+      <Filter>Исходные файлы\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Services\Service_0x4.c">
+      <Filter>Исходные файлы\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Services\Service_0x5.c">
+      <Filter>Исходные файлы\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Services\Service_0x6.c">
+      <Filter>Исходные файлы\Services</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Services\Services_0x1\Service_0x1.h">
-      <Filter>Исходные файлы\Services\0x1</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Services\GFunc\CData.h">
       <Filter>Исходные файлы\GFunc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Services\GFunc\Global_Function.h">
       <Filter>Исходные файлы\GFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Services\Service_0x1.h">
+      <Filter>Исходные файлы\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Services\Service_0x2.h">
+      <Filter>Исходные файлы\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Services\Service_0x3.h">
+      <Filter>Исходные файлы\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Services\Service_0x4.h">
+      <Filter>Исходные файлы\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Services\Service_0x5.h">
+      <Filter>Исходные файлы\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Services\Service_0x6.h">
+      <Filter>Исходные файлы\Services</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

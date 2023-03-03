@@ -8,19 +8,11 @@
 
 using namespace std;
 
-//
-//void case_serves(uint8_t* m) 
-//{
-//  if (sizeof(m) < 2)
-//    return;
-//}
 
 int main()
 {
-  //auto func_lamd = [](int ix)
-  //{
-  //  std::cout << ix << std::endl;
-  //};
+
+  uint8_t* m = new uint8_t[10];
 
   std::cout << "Hello World!\n";
   uds::request_message request;
